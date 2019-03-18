@@ -1,0 +1,1032 @@
+[ 2019-03-14T09:44:33+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013720s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011817s ]
+
+[ 2019-03-14T09:44:33+08:00 ] 127.0.0.1 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000215s ]
+ERR: 无法加载控制器:Robots.txt
+
+[ 2019-03-14T09:44:36+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+
+[ 2019-03-14T10:16:27+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000122s ]
+
+[ 2019-03-14T10:16:29+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+
+[ 2019-03-14T10:31:08+08:00 ] 127.0.0.1 /api/Salbum/getListenSalbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+
+[ 2019-03-14T10:32:50+08:00 ] 127.0.0.1 /api/Salbum/getListenSalbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000215s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `scategory_id` = 5  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `icpnt_scategory` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `icpnt_scategory` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_scategory` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-03-14T10:34:48+08:00 ] 127.0.0.1 /api/Salbum/getListenSalbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000116s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `scategory_id` = 5  [ RunTime:0.0002s ]
+
+[ 2019-03-14T10:34:49+08:00 ] 127.0.0.1 /api/Salbum/getListenSalbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `scategory_id` = 5  [ RunTime:0.0006s ]
+
+[ 2019-03-14T10:34:50+08:00 ] 127.0.0.1 /api/Salbum/getListenSalbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `scategory_id` = 5  [ RunTime:0.0006s ]
+
+[ 2019-03-14T10:35:14+08:00 ] 127.0.0.1 /api/Salbum/getListenSalbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `scategory_id` = 5  [ RunTime:0.0006s ]
+
+[ 2019-03-14T10:35:15+08:00 ] 127.0.0.1 /api/Salbum/getListenSalbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `scategory_id` = 5  [ RunTime:0.0006s ]
+
+[ 2019-03-14T10:35:16+08:00 ] 127.0.0.1 /api/Salbum/getListenSalbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `scategory_id` = 5  [ RunTime:0.0009s ]
+
+[ 2019-03-14T10:35:16+08:00 ] 127.0.0.1 /api/Salbum/getListenSalbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000176s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `scategory_id` = 5  [ RunTime:0.0004s ]
+
+[ 2019-03-14T10:35:17+08:00 ] 127.0.0.1 /api/Salbum/getListenSalbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000117s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `scategory_id` = 5  [ RunTime:0.0006s ]
+
+[ 2019-03-14T10:35:17+08:00 ] 127.0.0.1 /api/Salbum/getListenSalbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000128s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `scategory_id` = 5  [ RunTime:0.0003s ]
+
+[ 2019-03-14T10:35:18+08:00 ] 127.0.0.1 /api/Salbum/getListenSalbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `scategory_id` = 5  [ RunTime:0.0003s ]
+
+[ 2019-03-14T10:49:18+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000102s ]
+
+[ 2019-03-14T10:49:19+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000176s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2019-03-14T10:49:20+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+
+[ 2019-03-14T11:10:59+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mcategory_id /var/www/html/books/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 161 行.
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND id='' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: mcategory_id /var/www/html/books/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 161 行.
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND id='' ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: mcategory_id /var/www/html/books/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 161 行.
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND id='' ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-03-14T11:11:12+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-03-14T11:19:58+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-03-14T11:20:38+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000233s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' )  [ RunTime:0.0005s ]
+
+[ 2019-03-14T11:23:49+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000215s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: bgm_url /var/www/html/books/Application/Api/Controller/TellingstoryController.class.php 第 29 行.
+NOTIC: [8] Undefined index: bgm_url /var/www/html/books/Application/Api/Controller/TellingstoryController.class.php 第 29 行.
+NOTIC: [8] Undefined index: bgm_url /var/www/html/books/Application/Api/Controller/TellingstoryController.class.php 第 29 行.
+
+[ 2019-03-14T11:24:22+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000126s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' )  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/html/books/Application/Api/Controller/TellingstoryController.class.php 第 28 行.
+
+[ 2019-03-14T11:24:42+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000129s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' )  [ RunTime:0.0002s ]
+
+[ 2019-03-14T11:26:39+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000115s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' )  [ RunTime:0.0002s ]
+
+[ 2019-03-14T11:27:08+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000162s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' )  [ RunTime:0.0002s ]
+
+[ 2019-03-14T11:27:10+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' )  [ RunTime:0.0003s ]
+
+[ 2019-03-14T11:27:10+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' )  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' )  [ RunTime:0.0003s ]
+
+[ 2019-03-14T11:27:11+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' )  [ RunTime:0.0005s ]
+
+[ 2019-03-14T11:27:14+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' )  [ RunTime:0.0001s ]
+
+[ 2019-03-14T11:27:15+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' )  [ RunTime:0.0003s ]
+
+[ 2019-03-14T11:27:40+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000113s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' )  [ RunTime:0.0002s ]
+
+[ 2019-03-14T11:27:56+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' )  [ RunTime:0.0003s ]
+
+[ 2019-03-14T11:28:08+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000113s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' )  [ RunTime:0.0003s ]
+
+[ 2019-03-14T11:28:16+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' )  [ RunTime:0.0002s ]
+
+[ 2019-03-14T11:28:18+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' )  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' )  [ RunTime:0.0006s ]
+
+[ 2019-03-14T11:28:25+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' )  [ RunTime:0.0005s ]
+
+[ 2019-03-14T11:28:26+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' )  [ RunTime:0.0005s ]
+
+[ 2019-03-14T11:29:39+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000182s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' )  [ RunTime:0.0002s ]
+
+[ 2019-03-14T11:41:15+08:00 ] 127.0.0.1 /api/Tellingstory/searchBgm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+
+[ 2019-03-14T11:41:23+08:00 ] 127.0.0.1 /api/Tellingstory/searchBgm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE `bgm_title` LIKE '%7851%'  [ RunTime:0.0006s ]
+
+[ 2019-03-14T11:41:25+08:00 ] 127.0.0.1 /api/Tellingstory/searchBgm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE `bgm_title` LIKE '%7851%'  [ RunTime:0.0001s ]
+
+[ 2019-03-14T11:41:32+08:00 ] 127.0.0.1 /api/Tellingstory/searchBgm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000107s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE `bgm_title` LIKE '%地铁%'  [ RunTime:0.0003s ]
+
+[ 2019-03-14T11:42:14+08:00 ] 127.0.0.1 /api/Tellingstory/searchBgm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE `bgm_title` LIKE '%地铁%'  [ RunTime:0.0002s ]
+
+[ 2019-03-14T11:45:42+08:00 ] 127.0.0.1 /api/Tellingstory/searchBgm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE `bgm_title` LIKE '%地铁%' LIMIT 0,1   [ RunTime:0.0005s ]
+
+[ 2019-03-14T11:45:43+08:00 ] 127.0.0.1 /api/Tellingstory/searchBgm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE `bgm_title` LIKE '%地铁%' LIMIT 0,1   [ RunTime:0.0005s ]
+
+[ 2019-03-14T11:46:03+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `icpnt_mcategory` LIMIT 0,1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' )  [ RunTime:0.0004s ]
+
+[ 2019-03-14T11:46:38+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' )  [ RunTime:0.0006s ]
+
+[ 2019-03-14T11:48:10+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' ) LIMIT 0,1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' ) LIMIT 0,1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' ) LIMIT 0,1   [ RunTime:0.0005s ]
+
+[ 2019-03-14T11:48:11+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' ) LIMIT 0,1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' ) LIMIT 0,1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' ) LIMIT 0,1   [ RunTime:0.0001s ]
+
+[ 2019-03-14T11:48:15+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' ) LIMIT 0,2   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' ) LIMIT 0,2   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' ) LIMIT 0,2   [ RunTime:0.0004s ]
+
+[ 2019-03-14T11:48:23+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000119s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' ) LIMIT 0,2   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' ) LIMIT 0,2   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' ) LIMIT 0,2   [ RunTime:0.0003s ]
+
+[ 2019-03-14T11:48:24+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' ) LIMIT 0,2   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' ) LIMIT 0,2   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' ) LIMIT 0,2   [ RunTime:0.0004s ]
+
+[ 2019-03-14T11:48:25+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' ) LIMIT 0,2   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' ) LIMIT 0,2   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' ) LIMIT 0,2   [ RunTime:0.0005s ]
+
+[ 2019-03-14T14:35:01+08:00 ] 127.0.0.1 /api/Tellingstory/getBgmAndMcategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+SQL: SHOW COLUMNS FROM `icpnt_mcategory` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `icpnt_mcategory`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='2' ) LIMIT 0,2   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='3' ) LIMIT 0,2   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE ( 1=1 AND mcategory_id='4' ) LIMIT 0,2   [ RunTime:0.0005s ]
+
+[ 2019-03-14T14:35:15+08:00 ] 127.0.0.1 /api/Tellingstory/searchBgm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE `bgm_title` LIKE '%地铁%'  [ RunTime:0.0005s ]
+
+[ 2019-03-14T14:35:54+08:00 ] 127.0.0.1 /api/Tellingstory/loadMoreBgm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000142s ]
+
+[ 2019-03-14T14:36:32+08:00 ] 127.0.0.1 /api/Tellingstory/loadMoreBgm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000168s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE `mcategory_id` = 2 LIMIT 5,5   [ RunTime:0.0003s ]
+
+[ 2019-03-14T14:36:34+08:00 ] 127.0.0.1 /api/Tellingstory/loadMoreBgm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE `mcategory_id` = 2 LIMIT 5,5   [ RunTime:0.0006s ]
+
+[ 2019-03-14T14:36:50+08:00 ] 127.0.0.1 /api/Tellingstory/loadMoreBgm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE `mcategory_id` = 2 LIMIT 0,5   [ RunTime:0.0001s ]
+
+[ 2019-03-14T14:37:25+08:00 ] 127.0.0.1 /api/Tellingstory/loadMoreBgm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000118s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE `mcategory_id` = 2 LIMIT 0,5   [ RunTime:0.0002s ]
+
+[ 2019-03-14T14:38:02+08:00 ] 127.0.0.1 /api/Tellingstory/loadMoreBgm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `icpnt_bgm` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_bgm` WHERE `mcategory_id` = 2 LIMIT 0,5   [ RunTime:0.0002s ]
+
+[ 2019-03-14T16:57:12+08:00 ] 127.0.0.1 /api/User/getOpenID
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+
+[ 2019-03-14T16:57:54+08:00 ] 127.0.0.1 /api/User/getOpenID
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+ERR: Call to undefined function Api\Service\curl_get()
+
+[ 2019-03-14T16:59:25+08:00 ] 127.0.0.1 /api/User/getOpenID
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000124s ]
+
+[ 2019-03-14T17:44:00+08:00 ] 127.0.0.1 /api/User/wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000114s ]
+NOTIC: [2] Missing argument 1 for Api\Service\UserToken::__construct(), called in /var/www/html/books/Application/Api/Controller/UserController.class.php on line 39 and defined /var/www/html/books/Application/Api/Service/UserToken.class.php 第 32 行.
+NOTIC: [8] Undefined variable: code /var/www/html/books/Application/Api/Service/UserToken.class.php 第 34 行.
+NOTIC: [8] Undefined index: userInfo /var/www/html/books/Application/Api/Controller/UserController.class.php 第 40 行.
+
+[ 2019-03-14T17:44:27+08:00 ] 127.0.0.1 /api/User/wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+NOTIC: [2] Missing argument 1 for Api\Service\UserToken::__construct(), called in /var/www/html/books/Application/Api/Controller/UserController.class.php on line 39 and defined /var/www/html/books/Application/Api/Service/UserToken.class.php 第 32 行.
+NOTIC: [8] Undefined variable: code /var/www/html/books/Application/Api/Service/UserToken.class.php 第 34 行.
+NOTIC: [8] Undefined index: userInfo /var/www/html/books/Application/Api/Controller/UserController.class.php 第 40 行.
+
+[ 2019-03-14T17:45:00+08:00 ] 127.0.0.1 /api/User/wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+NOTIC: [2] Missing argument 1 for Api\Service\UserToken::__construct(), called in /var/www/html/books/Application/Api/Controller/UserController.class.php on line 39 and defined /var/www/html/books/Application/Api/Service/UserToken.class.php 第 32 行.
+NOTIC: [8] Undefined variable: code /var/www/html/books/Application/Api/Service/UserToken.class.php 第 34 行.
+NOTIC: [8] Undefined index: userInfo /var/www/html/books/Application/Api/Controller/UserController.class.php 第 40 行.
+
+[ 2019-03-14T17:46:30+08:00 ] 127.0.0.1 /api/User/wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+NOTIC: [2] Missing argument 1 for Api\Service\UserToken::__construct(), called in /var/www/html/books/Application/Api/Controller/UserController.class.php on line 39 and defined /var/www/html/books/Application/Api/Service/UserToken.class.php 第 32 行.
+NOTIC: [8] Undefined variable: code /var/www/html/books/Application/Api/Service/UserToken.class.php 第 34 行.
+NOTIC: [8] Undefined index: userInfo /var/www/html/books/Application/Api/Controller/UserController.class.php 第 40 行.
+NOTIC: [8] Undefined index: userInfo xdebug://debug-eval(1) : eval()'d code 第 1 行.
+
+[ 2019-03-14T17:47:11+08:00 ] 127.0.0.1 /api/User/wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000174s ]
+NOTIC: [2] Missing argument 1 for Api\Service\UserToken::__construct(), called in /var/www/html/books/Application/Api/Controller/UserController.class.php on line 39 and defined /var/www/html/books/Application/Api/Service/UserToken.class.php 第 32 行.
+NOTIC: [8] Undefined variable: code /var/www/html/books/Application/Api/Service/UserToken.class.php 第 34 行.
+
+[ 2019-03-14T17:49:18+08:00 ] 127.0.0.1 /api/User/wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+NOTIC: [2] Missing argument 1 for Api\Service\UserToken::__construct(), called in /var/www/html/books/Application/Api/Controller/UserController.class.php on line 39 and defined /var/www/html/books/Application/Api/Service/UserToken.class.php 第 32 行.
+NOTIC: [8] Undefined variable: code /var/www/html/books/Application/Api/Service/UserToken.class.php 第 34 行.
+
+[ 2019-03-14T17:49:49+08:00 ] 127.0.0.1 /api/User/wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000249s ]
+NOTIC: [2] Missing argument 1 for Api\Service\UserToken::__construct(), called in /var/www/html/books/Application/Api/Controller/UserController.class.php on line 39 and defined /var/www/html/books/Application/Api/Service/UserToken.class.php 第 32 行.
+NOTIC: [8] Undefined variable: code /var/www/html/books/Application/Api/Service/UserToken.class.php 第 34 行.
+
+[ 2019-03-14T17:50:45+08:00 ] 127.0.0.1 /api/User/wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000129s ]
+NOTIC: [2] Missing argument 1 for Api\Service\UserToken::__construct(), called in /var/www/html/books/Application/Api/Controller/UserController.class.php on line 39 and defined /var/www/html/books/Application/Api/Service/UserToken.class.php 第 32 行.
+NOTIC: [8] Undefined variable: code /var/www/html/books/Application/Api/Service/UserToken.class.php 第 34 行.
+
+[ 2019-03-14T17:51:32+08:00 ] 127.0.0.1 /api/User/wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+NOTIC: [2] Missing argument 1 for Api\Service\UserToken::__construct(), called in /var/www/html/books/Application/Api/Controller/UserController.class.php on line 39 and defined /var/www/html/books/Application/Api/Service/UserToken.class.php 第 32 行.
+NOTIC: [8] Undefined variable: code /var/www/html/books/Application/Api/Service/UserToken.class.php 第 34 行.
+NOTIC: [8] Undefined index: openID /var/www/html/books/Application/Api/Service/UserToken.class.php 第 104 行.
+
+[ 2019-03-14T17:54:17+08:00 ] 127.0.0.1 /api/User/wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+NOTIC: [2] Missing argument 1 for Api\Service\UserToken::__construct(), called in /var/www/html/books/Application/Api/Controller/UserController.class.php on line 39 and defined /var/www/html/books/Application/Api/Service/UserToken.class.php 第 32 行.
+NOTIC: [8] Undefined variable: code /var/www/html/books/Application/Api/Service/UserToken.class.php 第 34 行.
+
+[ 2019-03-14T17:54:52+08:00 ] 127.0.0.1 /api/User/wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+NOTIC: [2] Missing argument 1 for Api\Service\UserToken::__construct(), called in /var/www/html/books/Application/Api/Controller/UserController.class.php on line 39 and defined /var/www/html/books/Application/Api/Service/UserToken.class.php 第 32 行.
+NOTIC: [8] Undefined variable: code /var/www/html/books/Application/Api/Service/UserToken.class.php 第 34 行.
+NOTIC: [2] json_decode() expects parameter 1 to be string, array given /var/www/html/books/Application/Api/Controller/UserController.class.php 第 41 行.
+
+[ 2019-03-14T17:59:29+08:00 ] 127.0.0.1 /api/User/wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000220s ]
+NOTIC: [2] Missing argument 1 for Api\Service\UserToken::__construct(), called in /var/www/html/books/Application/Api/Controller/UserController.class.php on line 39 and defined /var/www/html/books/Application/Api/Service/UserToken.class.php 第 32 行.
+NOTIC: [8] Undefined variable: code /var/www/html/books/Application/Api/Service/UserToken.class.php 第 34 行.
+NOTIC: [8] Undefined index: openID /var/www/html/books/Application/Api/Service/UserToken.class.php 第 104 行.
+
+[ 2019-03-14T18:03:31+08:00 ] 127.0.0.1 /api/User/wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000200s ]
+NOTIC: [2] Missing argument 1 for Api\Service\UserToken::__construct(), called in /var/www/html/books/Application/Api/Controller/UserController.class.php on line 39 and defined /var/www/html/books/Application/Api/Service/UserToken.class.php 第 32 行.
+NOTIC: [8] Undefined variable: code /var/www/html/books/Application/Api/Service/UserToken.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `icpnt_user` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `icpnt_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `icpnt_user` WHERE ( openid='525524324324324' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: province /var/www/html/books/Application/Api/Service/UserToken.class.php 第 150 行.
+NOTIC: [8] Undefined index: country /var/www/html/books/Application/Api/Service/UserToken.class.php 第 151 行.
+NOTIC: [8] Undefined index: gender /var/www/html/books/Application/Api/Service/UserToken.class.php 第 152 行.
+ERR: 1292:Incorrect datetime value: '1552557622' for column 'addTime' at row 1
+ [ SQL语句 ] : INSERT INTO `icpnt_user` (`openid`,`nickName`,`avatarUrl`,`city`,`province`,`country`,`gender`,`addTime`) VALUES ('525524324324324','Kyrie','https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIYtdVA4ZgnbBbf7icv3z6OichzLMXvE8QEt8KLr1e3aHhPFicXYpLicYCfyK42nGBgKQlRxpXz49j53A/132','Laiwu',NULL,NULL,NULL,'1552557622')
+ERR: 1292:Incorrect datetime value: '1552557622' for column 'addTime' at row 1
+ [ SQL语句 ] : INSERT INTO `icpnt_user` (`openid`,`nickName`,`avatarUrl`,`city`,`province`,`country`,`gender`,`addTime`) VALUES ('525524324324324','Kyrie','https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIYtdVA4ZgnbBbf7icv3z6OichzLMXvE8QEt8KLr1e3aHhPFicXYpLicYCfyK42nGBgKQlRxpXz49j53A/132','Laiwu',NULL,NULL,NULL,'1552557622')
+
+[ 2019-03-14T18:04:16+08:00 ] 127.0.0.1 /api/User/wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+NOTIC: [2] Missing argument 1 for Api\Service\UserToken::__construct(), called in /var/www/html/books/Application/Api/Controller/UserController.class.php on line 39 and defined /var/www/html/books/Application/Api/Service/UserToken.class.php 第 32 行.
+NOTIC: [8] Undefined variable: code /var/www/html/books/Application/Api/Service/UserToken.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `icpnt_user` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `icpnt_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `icpnt_user` WHERE ( openid='525524324324324' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: province /var/www/html/books/Application/Api/Service/UserToken.class.php 第 150 行.
+NOTIC: [8] Undefined index: country /var/www/html/books/Application/Api/Service/UserToken.class.php 第 151 行.
+NOTIC: [8] Undefined index: gender /var/www/html/books/Application/Api/Service/UserToken.class.php 第 152 行.
+SQL: INSERT INTO `icpnt_user` (`openid`,`nickName`,`avatarUrl`,`city`,`province`,`country`,`gender`,`addTime`) VALUES ('525524324324324','Kyrie','https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIYtdVA4ZgnbBbf7icv3z6OichzLMXvE8QEt8KLr1e3aHhPFicXYpLicYCfyK42nGBgKQlRxpXz49j53A/132','Laiwu',NULL,NULL,NULL,'1552557828') [ RunTime:0.1235s ]
+SQL: SHOW COLUMNS FROM `icpnt_token` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `icpnt_token` WHERE ( uid=215 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: INSERT INTO `icpnt_token` (`token`,`uid`,`token_time`) VALUES ('7c19c554976291d3505fc21dbb046b7d','215','1552557846') [ RunTime:0.1225s ]
+
+[ 2019-03-14T18:04:32+08:00 ] 127.0.0.1 /api/User/wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000227s ]
+NOTIC: [2] Missing argument 1 for Api\Service\UserToken::__construct(), called in /var/www/html/books/Application/Api/Controller/UserController.class.php on line 39 and defined /var/www/html/books/Application/Api/Service/UserToken.class.php 第 32 行.
+NOTIC: [8] Undefined variable: code /var/www/html/books/Application/Api/Service/UserToken.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `icpnt_user` [ RunTime:0.0877s ]
+SQL: SHOW COLUMNS FROM `icpnt_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `icpnt_user` WHERE ( openid='525524324324324' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: province /var/www/html/books/Application/Api/Service/UserToken.class.php 第 167 行.
+NOTIC: [8] Undefined index: country /var/www/html/books/Application/Api/Service/UserToken.class.php 第 168 行.
+NOTIC: [8] Undefined index: gender /var/www/html/books/Application/Api/Service/UserToken.class.php 第 169 行.
+ERR: Think\Model:update方法不存在！
+
+[ 2019-03-14T18:05:50+08:00 ] 127.0.0.1 /api/User/wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+NOTIC: [2] Missing argument 1 for Api\Service\UserToken::__construct(), called in /var/www/html/books/Application/Api/Controller/UserController.class.php on line 39 and defined /var/www/html/books/Application/Api/Service/UserToken.class.php 第 32 行.
+NOTIC: [8] Undefined variable: code /var/www/html/books/Application/Api/Service/UserToken.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `icpnt_user` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `icpnt_user` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_user` WHERE ( openid='525524324324324' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: province /var/www/html/books/Application/Api/Service/UserToken.class.php 第 167 行.
+NOTIC: [8] Undefined index: country /var/www/html/books/Application/Api/Service/UserToken.class.php 第 168 行.
+NOTIC: [8] Undefined index: gender /var/www/html/books/Application/Api/Service/UserToken.class.php 第 169 行.
+SQL: UPDATE `icpnt_user` SET `openid`='525524324324324',`nickName`='Kyrie111',`avatarUrl`='https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIYtdVA4ZgnbBbf7icv3z6OichzLMXvE8QEt8KLr1e3aHhPFicXYpLicYCfyK42nGBgKQlRxpXz49j53A/132',`city`='Laiwu',`province`=NULL,`country`=NULL,`gender`=NULL,`lastTime`='1552557928' WHERE `id` = 215 [ RunTime:0.0394s ]
+SQL: SHOW COLUMNS FROM `icpnt_token` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `icpnt_token` WHERE ( uid=215 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `icpnt_token` SET `id`='1',`token`='602e0f47062a7f9783e6c4a00a262445',`uid`='215',`token_time`='1552557941' WHERE ( uid=215 ) [ RunTime:0.0350s ]
+
+[ 2019-03-14T18:15:13+08:00 ] 127.0.0.1 /api/User/getOpenID
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+

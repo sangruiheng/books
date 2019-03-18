@@ -1,0 +1,1031 @@
+[ 2019-03-18T09:41:50+08:00 ] 127.0.0.1 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000158s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017831s ]
+ERR: 无法加载控制器:Robots.txt
+
+[ 2019-03-18T09:41:52+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+
+[ 2019-03-18T10:30:04+08:00 ] 127.0.0.1 /api/Salbum/listenNewestSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0010s ]
+ERR: 1054:Unknown column 'slabum_addtime' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0 ORDER BY slabum_addtime desc 
+ERR: 1054:Unknown column 'slabum_addtime' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0 ORDER BY slabum_addtime desc 
+
+[ 2019-03-18T10:30:28+08:00 ] 127.0.0.1 /api/Salbum/listenNewestSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000107s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0005s ]
+ERR: 1054:Unknown column 'slabum_addtime' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0 ORDER BY slabum_addtime desc 
+ERR: 1054:Unknown column 'slabum_addtime' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0 ORDER BY slabum_addtime desc 
+
+[ 2019-03-18T10:30:50+08:00 ] 127.0.0.1 /api/Salbum/listenNewestSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000119s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0 ORDER BY salbum_addtime desc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 16 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 10 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 11 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 12 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-03-18T10:30:56+08:00 ] 127.0.0.1 /api/Salbum/listenNewestSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0 ORDER BY salbum_addtime desc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 16 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 10 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 11 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 12 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 13 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2019-03-18T10:31:06+08:00 ] 127.0.0.1 /api/Salbum/listenNewestSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000183s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0 ORDER BY salbum_addtime desc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 10 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 12 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 13 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-03-18T10:31:12+08:00 ] 127.0.0.1 /api/Salbum/listenNewestSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000233s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0 ORDER BY salbum_addtime asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 10 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 11 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 12 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 13 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 16 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2019-03-18T10:31:26+08:00 ] 127.0.0.1 /api/Salbum/listenNewestSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0 ORDER BY salbum_addtime desc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 16 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 10 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 11 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 12 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 13 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2019-03-18T10:32:30+08:00 ] 127.0.0.1 /api/Salbum/listenNewestSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0 ORDER BY salbum_addtime desc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 16 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 13 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 12 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 11 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 10 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2019-03-18T10:32:45+08:00 ] 127.0.0.1 /api/Salbum/listenNewestSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0 ORDER BY salbum_addtime asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 10 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 11 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 12 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 13 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 16 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-03-18T10:35:38+08:00 ] 127.0.0.1 /api/Salbum/listenNewestSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000165s ]
+
+[ 2019-03-18T10:35:44+08:00 ] 127.0.0.1 /api/Salbum/listenNewestSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000170s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0 ORDER BY salbum_addtime asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 10 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 12 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-03-18T10:35:47+08:00 ] 127.0.0.1 /api/Salbum/listenNewestSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+
+[ 2019-03-18T10:35:51+08:00 ] 127.0.0.1 /api/Salbum/listenNewestSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0 ORDER BY salbum_addtime asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 10 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 12 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-03-18T10:46:22+08:00 ] 127.0.0.1 /api/Salbum/listenDurationSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000206s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_salbum`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='6' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='9' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='10' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='11' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='12' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='13' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='14' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='15' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='16' )  [ RunTime:0.0003s ]
+
+[ 2019-03-18T10:46:50+08:00 ] 127.0.0.1 /api/Salbum/listenDurationSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='10' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='11' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='12' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='13' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='16' )  [ RunTime:0.0002s ]
+
+[ 2019-03-18T10:59:42+08:00 ] 127.0.0.1 /api/Salbum/listenDurationSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='10' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='11' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='12' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='13' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='16' )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: storyDuration /var/www/html/books/Application/Api/Model/SalbumModel.class.php 第 48 行.
+
+[ 2019-03-18T11:00:57+08:00 ] 127.0.0.1 /api/Salbum/listenDurationSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='10' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='11' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='12' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='13' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='16' )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: storyDuration /var/www/html/books/Application/Api/Model/SalbumModel.class.php 第 48 行.
+
+[ 2019-03-18T11:01:39+08:00 ] 127.0.0.1 /api/Salbum/listenDurationSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='10' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='11' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='12' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='13' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='16' )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: storyDuration /var/www/html/books/Application/Api/Model/SalbumModel.class.php 第 48 行.
+
+[ 2019-03-18T11:04:48+08:00 ] 127.0.0.1 /api/Salbum/listenDurationSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='10' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='11' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='12' )  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='13' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='16' )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: storyDuration /var/www/html/books/Application/Api/Model/SalbumModel.class.php 第 51 行.
+
+[ 2019-03-18T11:06:51+08:00 ] 127.0.0.1 /api/Salbum/listenDurationSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='10' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='11' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='12' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='13' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='16' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: storyDuration /var/www/html/books/Application/Api/Model/SalbumModel.class.php 第 51 行.
+
+[ 2019-03-18T11:07:14+08:00 ] 127.0.0.1 /api/Salbum/listenDurationSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000118s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='10' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='11' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='12' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='13' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='16' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: storyDuration /var/www/html/books/Application/Api/Model/SalbumModel.class.php 第 51 行.
+
+[ 2019-03-18T11:08:00+08:00 ] 127.0.0.1 /api/Salbum/listenDurationSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000151s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='10' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='11' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='12' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='13' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='16' )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: storyDuration /var/www/html/books/Application/Api/Model/SalbumModel.class.php 第 51 行.
+NOTIC: [2] array_multisort(): Argument #2 is expected to be an array or a sort flag /var/www/html/books/Application/Api/Controller/SalbumController.class.php 第 103 行.
+
+[ 2019-03-18T11:08:06+08:00 ] 127.0.0.1 /api/Salbum/listenDurationSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='10' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='11' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='12' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='13' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='16' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: storyDuration /var/www/html/books/Application/Api/Model/SalbumModel.class.php 第 51 行.
+NOTIC: [2] array_multisort(): Argument #2 is expected to be an array or a sort flag /var/www/html/books/Application/Api/Controller/SalbumController.class.php 第 103 行.
+
+[ 2019-03-18T11:08:26+08:00 ] 127.0.0.1 /api/Salbum/listenDurationSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='10' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='11' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='12' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='13' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='16' )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: storyDuration /var/www/html/books/Application/Api/Model/SalbumModel.class.php 第 51 行.
+NOTIC: [2] array_multisort(): Argument #2 is expected to be an array or a sort flag /var/www/html/books/Application/Api/Controller/SalbumController.class.php 第 103 行.
+
+[ 2019-03-18T11:08:31+08:00 ] 127.0.0.1 /api/Salbum/listenDurationSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='10' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='11' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='12' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='13' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='16' )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: storyDuration /var/www/html/books/Application/Api/Model/SalbumModel.class.php 第 51 行.
+NOTIC: [2] array_multisort(): Argument #2 is expected to be an array or a sort flag /var/www/html/books/Application/Api/Controller/SalbumController.class.php 第 103 行.
+
+[ 2019-03-18T11:09:00+08:00 ] 127.0.0.1 /api/Salbum/listenDurationSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='10' )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='11' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='12' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='13' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='16' )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: storyDuration /var/www/html/books/Application/Api/Model/SalbumModel.class.php 第 51 行.
+NOTIC: [2] array_multisort(): Argument #2 is expected to be an array or a sort flag /var/www/html/books/Application/Api/Controller/SalbumController.class.php 第 103 行.
+
+[ 2019-03-18T11:09:05+08:00 ] 127.0.0.1 /api/Salbum/listenDurationSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='10' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='11' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='12' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='13' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='16' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: storyDuration /var/www/html/books/Application/Api/Model/SalbumModel.class.php 第 51 行.
+NOTIC: [2] array_multisort(): Argument #2 is expected to be an array or a sort flag /var/www/html/books/Application/Api/Controller/SalbumController.class.php 第 103 行.
+
+[ 2019-03-18T11:09:34+08:00 ] 127.0.0.1 /api/Salbum/listenDurationSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='10' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='11' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='12' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='13' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='16' )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: storyDuration /var/www/html/books/Application/Api/Model/SalbumModel.class.php 第 51 行.
+
+[ 2019-03-18T11:09:48+08:00 ] 127.0.0.1 /api/Salbum/listenDurationSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='10' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='11' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='12' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='13' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='16' )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: storyDuration /var/www/html/books/Application/Api/Model/SalbumModel.class.php 第 51 行.
+NOTIC: [2] array_multisort(): Argument #2 is expected to be an array or a sort flag /var/www/html/books/Application/Api/Controller/SalbumController.class.php 第 103 行.
+
+[ 2019-03-18T11:09:50+08:00 ] 127.0.0.1 /api/Salbum/listenDurationSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='10' )  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='11' )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='12' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='13' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='16' )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: storyDuration /var/www/html/books/Application/Api/Model/SalbumModel.class.php 第 51 行.
+NOTIC: [2] array_multisort(): Argument #2 is expected to be an array or a sort flag /var/www/html/books/Application/Api/Controller/SalbumController.class.php 第 103 行.
+
+[ 2019-03-18T11:10:38+08:00 ] 127.0.0.1 /api/Salbum/listenDurationSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='10' )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='11' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='12' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='13' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='16' )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: storyDuration /var/www/html/books/Application/Api/Model/SalbumModel.class.php 第 51 行.
+
+[ 2019-03-18T11:10:42+08:00 ] 127.0.0.1 /api/Salbum/listenDurationSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='10' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='11' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='12' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='13' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='16' )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: storyDuration /var/www/html/books/Application/Api/Model/SalbumModel.class.php 第 51 行.
+
+[ 2019-03-18T11:10:53+08:00 ] 127.0.0.1 /api/Salbum/listenDurationSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+
+[ 2019-03-18T11:10:55+08:00 ] 127.0.0.1 /api/Salbum/listenDurationSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000116s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='10' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='11' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='12' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='13' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='16' )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: storyDuration /var/www/html/books/Application/Api/Model/SalbumModel.class.php 第 51 行.
+
+[ 2019-03-18T11:13:09+08:00 ] 127.0.0.1 /api/Salbum/listenDurationSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_type` = 0  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='10' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='11' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='12' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='13' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `icpnt_listenstory` WHERE ( 1=1 AND salbum_id='16' )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: storyDuration /var/www/html/books/Application/Api/Model/SalbumModel.class.php 第 51 行.
+
+[ 2019-03-18T11:24:08+08:00 ] 127.0.0.1 /api/Scategory/getTellingScategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+SQL: SHOW COLUMNS FROM `icpnt_scategory` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`scategory_name` FROM `icpnt_scategory` WHERE `scategory_type` = 1  [ RunTime:0.0001s ]
+
+[ 2019-03-18T11:34:58+08:00 ] 127.0.0.1 /api/Listenstory/getSearchListenStory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `icpnt_salbum`  [ RunTime:0.0006s ]
+
+[ 2019-03-18T11:35:16+08:00 ] 127.0.0.1 /api/Listenstory/getSearchListenStory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+
+[ 2019-03-18T11:35:19+08:00 ] 127.0.0.1 /api/Listenstory/getSearchListenStory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000140s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_salbum`  [ RunTime:0.0002s ]
+
+[ 2019-03-18T11:35:24+08:00 ] 127.0.0.1 /api/Listenstory/getSearchListenStory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `icpnt_salbum`  [ RunTime:0.0006s ]
+
+[ 2019-03-18T11:35:37+08:00 ] 127.0.0.1 /api/Listenstory/getSearchListenStory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_name` LIKE '%英文读物专辑2%'  [ RunTime:0.0005s ]
+
+[ 2019-03-18T11:35:42+08:00 ] 127.0.0.1 /api/Listenstory/getSearchListenStory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_name` LIKE '%1%'  [ RunTime:0.0006s ]
+
+[ 2019-03-18T11:37:06+08:00 ] 127.0.0.1 /api/Listenstory/getSearchListenStory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_name` LIKE '%1%'  [ RunTime:0.0002s ]
+
+[ 2019-03-18T11:37:44+08:00 ] 127.0.0.1 /api/Listenstory/getSearchListenStory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_name` LIKE '%1%'  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 6 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 10 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 12 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 14 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2019-03-18T11:37:52+08:00 ] 127.0.0.1 /api/Listenstory/getSearchListenStory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+SQL: SHOW COLUMNS FROM `icpnt_salbum` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_salbum` WHERE `salbum_name` LIKE '%1%'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 10 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 12 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `icpnt_listenstory` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `icpnt_listenstory` WHERE `salbum_id` = 14 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-03-18T11:52:32+08:00 ] 127.0.0.1 /api/Tellingstory/getSearchTellingStory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000207s ]
+SQL: SHOW COLUMNS FROM `icpnt_tellingstory` [ RunTime:0.0004s ]
+SQL: SELECT `telling_story_name`,`telling_story_author`,`telling_story_content` FROM `icpnt_tellingstory` WHERE ( `telling_story_name` LIKE '%1%' OR `telling_story_author` LIKE '%1%' )  [ RunTime:0.0003s ]
+
+[ 2019-03-18T11:52:57+08:00 ] 127.0.0.1 /api/Tellingstory/getSearchTellingStory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `icpnt_tellingstory` [ RunTime:0.0004s ]
+SQL: SELECT `telling_story_name`,`telling_story_author`,`telling_story_content` FROM `icpnt_tellingstory` WHERE ( `telling_story_name` LIKE '%1%' OR `telling_story_author` LIKE '%1%' )  [ RunTime:0.0003s ]
+
+[ 2019-03-18T11:53:08+08:00 ] 127.0.0.1 /api/Tellingstory/getSearchTellingStory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000172s ]
+SQL: SHOW COLUMNS FROM `icpnt_tellingstory` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`telling_story_name`,`telling_story_author`,`telling_story_content` FROM `icpnt_tellingstory` WHERE ( `telling_story_name` LIKE '%1%' OR `telling_story_author` LIKE '%1%' )  [ RunTime:0.0004s ]
+
+[ 2019-03-18T11:56:38+08:00 ] 127.0.0.1 /api/Tellingstory/getSearchTellingStory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000158s ]
+SQL: SHOW COLUMNS FROM `icpnt_tellingstory` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`telling_story_name`,`telling_story_author`,`telling_story_content`,`telliing_story_like` FROM `icpnt_tellingstory` WHERE ( `telling_story_name` LIKE '%1%' OR `telling_story_author` LIKE '%1%' )  [ RunTime:0.0003s ]
+
+[ 2019-03-18T11:56:40+08:00 ] 127.0.0.1 /api/Tellingstory/getSearchTellingStory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+
+[ 2019-03-18T11:56:42+08:00 ] 127.0.0.1 /api/Tellingstory/getSearchTellingStory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000110s ]
+SQL: SHOW COLUMNS FROM `icpnt_tellingstory` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`telling_story_name`,`telling_story_author`,`telling_story_content`,`telliing_story_like` FROM `icpnt_tellingstory` WHERE ( `telling_story_name` LIKE '%1%' OR `telling_story_author` LIKE '%1%' )  [ RunTime:0.0003s ]
+
+[ 2019-03-18T11:59:34+08:00 ] 127.0.0.1 /api/Tellingstory/getSearchTellingStory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `icpnt_tellingstory` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`telling_story_name`,`telling_story_author`,`telling_story_content`,`telliing_story_like` FROM `icpnt_tellingstory` WHERE ( `telling_story_name` LIKE '%43543%' OR `telling_story_author` LIKE '%43543%' )  [ RunTime:0.0003s ]
+
+[ 2019-03-18T11:59:36+08:00 ] 127.0.0.1 /api/Tellingstory/getSearchTellingStory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `icpnt_tellingstory` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`telling_story_name`,`telling_story_author`,`telling_story_content`,`telliing_story_like` FROM `icpnt_tellingstory` WHERE ( `telling_story_name` LIKE '%43543%' OR `telling_story_author` LIKE '%43543%' )  [ RunTime:0.0005s ]
+
+[ 2019-03-18T11:59:36+08:00 ] 127.0.0.1 /api/Tellingstory/getSearchTellingStory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+SQL: SHOW COLUMNS FROM `icpnt_tellingstory` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`telling_story_name`,`telling_story_author`,`telling_story_content`,`telliing_story_like` FROM `icpnt_tellingstory` WHERE ( `telling_story_name` LIKE '%43543%' OR `telling_story_author` LIKE '%43543%' )  [ RunTime:0.0003s ]
+
+[ 2019-03-18T11:59:37+08:00 ] 127.0.0.1 /api/Tellingstory/getSearchTellingStory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000107s ]
+SQL: SHOW COLUMNS FROM `icpnt_tellingstory` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`telling_story_name`,`telling_story_author`,`telling_story_content`,`telliing_story_like` FROM `icpnt_tellingstory` WHERE ( `telling_story_name` LIKE '%43543%' OR `telling_story_author` LIKE '%43543%' )  [ RunTime:0.0002s ]
+
+[ 2019-03-18T11:59:38+08:00 ] 127.0.0.1 /api/Tellingstory/getSearchTellingStory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `icpnt_tellingstory` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`telling_story_name`,`telling_story_author`,`telling_story_content`,`telliing_story_like` FROM `icpnt_tellingstory` WHERE ( `telling_story_name` LIKE '%43543%' OR `telling_story_author` LIKE '%43543%' )  [ RunTime:0.0003s ]
+
+[ 2019-03-18T11:59:39+08:00 ] 127.0.0.1 /api/Tellingstory/getSearchTellingStory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `icpnt_tellingstory` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`telling_story_name`,`telling_story_author`,`telling_story_content`,`telliing_story_like` FROM `icpnt_tellingstory` WHERE ( `telling_story_name` LIKE '%43543%' OR `telling_story_author` LIKE '%43543%' )  [ RunTime:0.0006s ]
+
+[ 2019-03-18T11:59:39+08:00 ] 127.0.0.1 /api/Tellingstory/getSearchTellingStory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+SQL: SHOW COLUMNS FROM `icpnt_tellingstory` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`telling_story_name`,`telling_story_author`,`telling_story_content`,`telliing_story_like` FROM `icpnt_tellingstory` WHERE ( `telling_story_name` LIKE '%43543%' OR `telling_story_author` LIKE '%43543%' )  [ RunTime:0.0006s ]
+
+[ 2019-03-18T12:02:18+08:00 ] 127.0.0.1 /api/Tellingstory/getSearchTellingStory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000226s ]
+SQL: SHOW COLUMNS FROM `icpnt_tellingstory` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`telling_story_name`,`telling_story_author`,`telling_story_content`,`telliing_story_like` FROM `icpnt_tellingstory` WHERE ( `telling_story_name` LIKE '%1%' OR `telling_story_author` LIKE '%1%' )  [ RunTime:0.0004s ]
+
+[ 2019-03-18T12:07:44+08:00 ] 127.0.0.1 /api/Tellingstory/tellingIDSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `icpnt_tellingstory` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`telling_story_name`,`telling_story_author`,`telling_story_content`,`telliing_story_like` FROM `icpnt_tellingstory` ORDER BY id desc  [ RunTime:0.0004s ]
+
+[ 2019-03-18T12:07:49+08:00 ] 127.0.0.1 /api/Tellingstory/tellingIDSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `icpnt_tellingstory` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`telling_story_name`,`telling_story_author`,`telling_story_content`,`telliing_story_like` FROM `icpnt_tellingstory` ORDER BY id asc  [ RunTime:0.0006s ]
+
+[ 2019-03-18T12:13:03+08:00 ] 127.0.0.1 /api/Tellingstory/tellingIDSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000115s ]
+SQL: SHOW COLUMNS FROM `icpnt_tellingstory` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`telling_story_name`,`telling_story_author`,`telling_story_content`,`telliing_story_like`,`telliing_story_play` FROM `icpnt_tellingstory` ORDER BY id asc  [ RunTime:0.0002s ]
+
+[ 2019-03-18T12:15:19+08:00 ] 127.0.0.1 /api/Tellingstory/tellingPlayVolumeSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000117s ]
+SQL: SHOW COLUMNS FROM `icpnt_tellingstory` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`telling_story_name`,`telling_story_author`,`telling_story_content`,`telliing_story_like`,`telliing_story_play` FROM `icpnt_tellingstory` ORDER BY telliing_story_play asc  [ RunTime:0.0002s ]
+
+[ 2019-03-18T12:15:24+08:00 ] 127.0.0.1 /api/Tellingstory/tellingPlayVolumeSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `icpnt_tellingstory` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`telling_story_name`,`telling_story_author`,`telling_story_content`,`telliing_story_like`,`telliing_story_play` FROM `icpnt_tellingstory` ORDER BY telliing_story_play desc  [ RunTime:0.0006s ]
+
+[ 2019-03-18T12:19:02+08:00 ] 127.0.0.1 /api/Tellingstory/tellingNewestSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `icpnt_tellingstory` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`telling_story_name`,`telling_story_author`,`telling_story_content`,`telliing_story_like`,`telliing_story_play` FROM `icpnt_tellingstory` ORDER BY telling_story_time desc  [ RunTime:0.0007s ]
+
+[ 2019-03-18T12:19:10+08:00 ] 127.0.0.1 /api/Tellingstory/tellingNewestSort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `icpnt_tellingstory` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`telling_story_name`,`telling_story_author`,`telling_story_content`,`telliing_story_like`,`telliing_story_play` FROM `icpnt_tellingstory` ORDER BY telling_story_time asc  [ RunTime:0.0002s ]
+
+[ 2019-03-18T16:23:37+08:00 ] 127.0.0.1 /api/Tellingstory/showUploadWorks
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `icpnt_tellingstory` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`telling_story_name` FROM `icpnt_tellingstory` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2019-03-18T17:31:13+08:00 ] 127.0.0.1 /api/User/wxLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+NOTIC: [2] Missing argument 1 for Api\Service\UserToken::__construct(), called in /var/www/html/books/Application/Api/Controller/UserController.class.php on line 35 and defined /var/www/html/books/Application/Api/Service/UserToken.class.php 第 32 行.
+NOTIC: [8] Undefined variable: code /var/www/html/books/Application/Api/Service/UserToken.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `icpnt_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `icpnt_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `icpnt_user` WHERE ( openid='525524324324324' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: province /var/www/html/books/Application/Api/Service/UserToken.class.php 第 167 行.
+NOTIC: [8] Undefined index: country /var/www/html/books/Application/Api/Service/UserToken.class.php 第 168 行.
+NOTIC: [8] Undefined index: gender /var/www/html/books/Application/Api/Service/UserToken.class.php 第 169 行.
+SQL: UPDATE `icpnt_user` SET `openid`='525524324324324',`nickName`='Kyrie111',`avatarUrl`='https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIYtdVA4ZgnbBbf7icv3z6OichzLMXvE8QEt8KLr1e3aHhPFicXYpLicYCfyK42nGBgKQlRxpXz49j53A/132',`city`='Laiwu',`province`=NULL,`country`=NULL,`gender`=NULL,`lastTime`='1552901472' WHERE `id` = 215 [ RunTime:0.3678s ]
+SQL: SHOW COLUMNS FROM `icpnt_token` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `icpnt_token` WHERE ( uid=215 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `icpnt_token` SET `id`='1',`token`='655d495c9a3396454e611b3e62dfe657',`uid`='215',`token_time`='1552901473' WHERE ( uid=215 ) [ RunTime:0.0656s ]
+
+[ 2019-03-18T17:31:36+08:00 ] 127.0.0.1 /api/Tellingstory/createUserAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+
+[ 2019-03-18T17:32:29+08:00 ] 127.0.0.1 /api/Tellingstory/createUserAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000218s ]
+
+[ 2019-03-18T17:34:09+08:00 ] 127.0.0.1 /api/Tellingstory/createUserAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+
+[ 2019-03-18T17:34:52+08:00 ] 127.0.0.1 /api/Tellingstory/createUserAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000178s ]
+SQL: SHOW COLUMNS FROM `icpnt_token` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_token` WHERE ( token='655d495c9a3396454e611b3e62dfe657' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_useralbum` [ RunTime:0.0004s ]
+SQL: INSERT INTO `icpnt_useralbum` (`user_album_title`,`user_album_authority`,`scategory_id`) VALUES ('1111','1','1') [ RunTime:0.6821s ]
+
+[ 2019-03-18T17:36:39+08:00 ] 127.0.0.1 /api/Tellingstory/createUserAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `icpnt_token` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_token` WHERE ( token='655d495c9a3396454e611b3e62dfe6571' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-03-18T17:38:36+08:00 ] 127.0.0.1 /api/Tellingstory/createUserAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+SQL: SHOW COLUMNS FROM `icpnt_token` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `icpnt_token` WHERE ( token='655d495c9a3396454e611b3e62dfe657' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `icpnt_useralbum` [ RunTime:0.0004s ]
+SQL: INSERT INTO `icpnt_useralbum` (`user_album_title`,`user_album_authority`,`scategory_id`) VALUES ('1111','1','1') [ RunTime:0.8278s ]
+
+[ 2019-03-18T17:44:46+08:00 ] 127.0.0.1 /api/Tellingstory/getCreateScategory
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000228s ]
+SQL: SHOW COLUMNS FROM `icpnt_scategory` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `icpnt_scategory` WHERE `scategory_type` = 1  [ RunTime:0.0005s ]
+
