@@ -58,15 +58,36 @@ class UserToken extends Token
 
         $wxResult = json_decode($result, true);
 
-        if (!$wxResult) {
+        if ($wxResult['errcode']) {
             $result = (new UserException([
                 'code' => 70001,
-                'msg' => '获取用户openid-session_key失败'
+                'msg' => $wxResult
             ]))->getException();
             echo json_encode($result, JSON_UNESCAPED_UNICODE);
             die; //抛出异常
         }
+
+        $this->checkOpenID($wxResult);
+
         return $wxResult['openid'];
+    }
+
+    //判断数据库中是否存在该openid
+    private function checkOpenID($wxResult)
+    {
+        $userModel = new UserModel();
+        $map['openid'] = $wxResult['openid'];
+        $user = $userModel->where($map)->find();
+        if ($user) {
+            $userModel->session_key = $wxResult['session_key'];
+            $where['openid'] = $wxResult['openid'];
+            $userModel->where($where)->save();
+        } else {
+            $userModel->openid = $wxResult['openid'];
+            $userModel->session_key = $wxResult['session_key'];
+            $userModel->add();
+        }
+        return true;
     }
 
 

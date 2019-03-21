@@ -9,13 +9,14 @@
 namespace Api\Controller;
 
 
+use Api\Model\UserModel;
 use Api\Service\UserToken;
 
 
 class UserController extends CommonController
 {
 
-    //获取openid
+    //获取openid 并存入数据库
     public function getOpenID($code = '')
     {
         $userToken = new UserToken($code);
@@ -40,6 +41,19 @@ class UserController extends CommonController
             'code' => 200,
             'msg' => 'success',
             'Token' => $token
+        ]);
+    }
+
+    public function wxPhone(){
+        $userModel = new UserModel();
+        $encryptedData = $_POST['encryptedData'];
+        $iv = $_POST['iv'];
+        $openID = $_POST['openID'];
+        $wxPhone = $userModel->getWxPhone($encryptedData, $iv, $openID);
+        $this->ajaxReturn([
+            'code' => 200,
+            'msg' => 'success',
+            'data' => $wxPhone['phoneNumber']
         ]);
     }
 

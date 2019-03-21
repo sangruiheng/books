@@ -40,6 +40,7 @@ return array(
 
         'api/User/getOpenID'    => array('Api/User/getOpenID',array('method'=>'post')),         //获取openID
         'api/User/wxLogin'    => array('Api/User/wxLogin',array('method'=>'post')),         //用户登陆 返回Token
+        'api/User/wxPhone'    => array('Api/User/wxPhone',array('method'=>'post')),         //获取用户手机号
 
 
 
