@@ -33,7 +33,8 @@ class UserController extends CommonController
     {
         //openID nickName avatarUrl city...
         $userToken = new UserToken();
-        $wxResult = $_POST['userInfo'];
+        $wxResult = json_decode($_POST['userInfo'], true);
+
         $token = $userToken->wxGetUserInfo($wxResult);
         $this->ajaxReturn([
             'code' => 200,

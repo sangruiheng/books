@@ -41,6 +41,30 @@ class ListenstoryController extends CommonController
         ]);
     }
 
+    //获取听故事免费榜
+
+
+
+    //获取听故事收费榜
+    public function getListenStoryCharge(){
+        $salbumModel = new SalbumModel();
+        $map['scategory_type'] = C('Story.ListenStory');
+        $map['is_charge'] =C('Story.Charge');
+        $salbum = $salbumModel->where($map)->select();
+        foreach ($salbum as &$value) {
+            $value['salbum_headimg'] = C('Story.img_prefix') . $value['salbum_headimg'];
+//            $value['storySum'] = $salbumModel::getStorySum($value['id']);
+        }
+        if (!$salbum) {
+            $this->ajaxReturn((new SalbumException())->getException());
+        }
+        $this->ajaxReturn([
+            'code' => 200,
+            'msg' => 'success',
+            'data' => $salbum
+        ]);
+    }
+
 
 
 }

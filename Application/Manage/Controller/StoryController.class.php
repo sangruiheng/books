@@ -23,6 +23,9 @@ class StoryController extends CommonController
     //听故事
     public function listenStoryList()
     {
+        $salbum_id = $_GET['salbum_id'];
+        $salbumModel = new SalbumModel();
+        $salbum = $salbumModel->where("id=$salbum_id")->find();
         $keyWord = $_GET['keyWord'];
         if (!empty($keyWord)) {
             $map = $this->Search('listenstory', $keyWord);
@@ -33,7 +36,8 @@ class StoryController extends CommonController
             $p = 1;
         }
         $listenstoryModel = new ListenstoryModel();
-        $listenStory = $listenstoryModel->relation(array('sCategory', 'sAlbum'))->where($map)->select();
+        $map['salbum_id'] = $salbum_id;
+        $listenStory = $listenstoryModel->relation(array('sCategory', 'sAlbum'))->where($map)->order('id desc')->select();
         $count = $listenstoryModel->where($map)->count();
         $Page = getpage($count, 10);
         foreach ($map as $key => $val) {
@@ -41,6 +45,7 @@ class StoryController extends CommonController
         }
         $this->assign('search', $search);
         $this->assign('page', $Page->show());
+        $this->assign('salbum', $salbum);
         $this->assign('list', $listenStory);
         $this->display();
     }
@@ -48,10 +53,11 @@ class StoryController extends CommonController
 
     public function addListenStory()
     {
-        $scategoryModel = new ScategoryModel();
-        $map['scategory_type'] = C('Story.ListenStory');
-        $scategory = $scategoryModel->where($map)->select();
-        $this->assign('scategory', $scategory);
+        $salbum_id = $_GET['salbum_id'];
+//        $scategoryModel = new ScategoryModel();
+//        $map['scategory_type'] = C('Story.ListenStory');
+//        $scategory = $scategoryModel->where($map)->select();
+        $this->assign('salbum_id', $salbum_id);
         $this->display();
     }
 
@@ -73,7 +79,7 @@ class StoryController extends CommonController
                 $result = $sql->save();
             }
             if ($result) {
-                $this->success('编辑成功！', U($controller . '/' . $backUrl . '/scategory_id/' . $_POST['scategory_id']));
+                $this->success('编辑成功！', U($controller . '/' . $backUrl . '/salbum_id/' . $_POST['salbum_id']));
             }
         } else {
             $this->error($sql->getError(), $jumpUrl = '', $ajax = true);

@@ -117,30 +117,31 @@
     <form class="addForm ajax-alert" id="form1" name="form1" method="post"
           action="__APP__/Story/addListenStoryData/controller/Story/backUrl/listenStoryList/table/listenstory">
         <input name="id" type="hidden" id="id" value="<{$_GET['id']}>"/>
+        <input name="salbum_id" type="hidden" id="salbum_id" value="<{$salbum_id}>"/>
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody>
 
-            <tr>
-                <td align="center">所属分类</td>
-                <td colspan="5">
-                    <select id="scategory_id" name="scategory_id" class="form-control">
-                        <option value="">--请选择--</option>
-                        <volist name="scategory" id="vo">
-                            <option value="<{$vo.id}>"><{$vo.scategory_name}></option>
-                        </volist>
-                    </select>
-                </td>
-            </tr>
+            <!--<tr>-->
+                <!--<td align="center">所属分类</td>-->
+                <!--<td colspan="5">-->
+                    <!--<select id="scategory_id" name="scategory_id" class="form-control">-->
+                        <!--<option value="">&#45;&#45;请选择&#45;&#45;</option>-->
+                        <!--<volist name="scategory" id="vo">-->
+                            <!--<option value="<{$vo.id}>"><{$vo.scategory_name}></option>-->
+                        <!--</volist>-->
+                    <!--</select>-->
+                <!--</td>-->
+            <!--</tr>-->
 
 
-            <tr>
-                <td align="center">所属专辑</td>
-                <td colspan="5">
-                    <select name="salbum_id" id="salbum_id" class="form-control">
-                        <option value="">--请选择--</option>
-                    </select>
-                </td>
-            </tr>
+            <!--<tr>-->
+                <!--<td align="center">所属专辑</td>-->
+                <!--<td colspan="5">-->
+                    <!--<select name="salbum_id" id="salbum_id" class="form-control">-->
+                        <!--<option value="">&#45;&#45;请选择&#45;&#45;</option>-->
+                    <!--</select>-->
+                <!--</td>-->
+            <!--</tr>-->
 
 
             <tr>

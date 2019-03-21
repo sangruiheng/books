@@ -33,6 +33,7 @@ return array(
 
 
         'api/Listenstory/getSearchListenStory'    => array('Api/Listenstory/getSearchListenStory',array('method'=>'post')),         //搜素专辑名(听)
+        'api/Listenstory/getListenStoryCharge'    => array('Api/Listenstory/getListenStoryCharge',array('method'=>'get')),         //获取听故事收费榜
 
 
 

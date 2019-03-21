@@ -17,7 +17,7 @@
     <script>
         $(document).ready(function (e) {
             getEditData(function (e) {
-                $('#salbum_headimg').siblings('.uploadSimple').after('<img class="pro-imgView" src="/Uploads/Manage/'+ e.salbum_headimg +'" width="34" height="34" alt="">');
+                $('#salbum_headimg').siblings('.uploadSimple').after('<img class="pro-imgView" src="/Uploads/Manage/' + e.salbum_headimg + '" width="34" height="34" alt="">');
             });
         });
     </script>
@@ -59,14 +59,44 @@
     <form class="addForm ajax-alert" id="form1" name="form1" method="post"
           action="__APP__/Salbum/addListenSalbumData/controller/Salbum/backUrl/listenSalbumList/table/salbum">
         <input name="id" type="hidden" id="id" value="<{$_GET['id']}>"/>
-        <input name="scategory_id" type="hidden" id="scategory_id" value="<{$scategory_id}>"/>
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody>
 
 
             <tr>
+                <td align="center">所属分类</td>
+                <td colspan="5"><select name="scategory_id" id="scategory_id" class="form-control">
+                    <option value="">--请选择--</option>
+                    <volist name="sCategory" id="vo">
+                        <option value="<{$vo.id}>"><{$vo.scategory_name}></option>
+                    </volist>
+                </select></td>
+            </tr>
+
+            <tr>
+                <td align="center">是否收费</td>
+                <td colspan="5"><select name="is_charge" id="is_charge" class="form-control">
+                    <option value="">--请选择--</option>
+                    <option value="0">免费</option>
+                    <option value="1">收费</option>
+                </select></td>
+            </tr>
+
+            <tr>
                 <td align="center">专辑名称</td>
                 <td><input type="text" name="salbum_name" id="salbum_name" class="form-control" placeholder="请输入专辑名称"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">专辑作者</td>
+                <td><input type="text" name="salbum_author" id="salbum_author" class="form-control" placeholder="请输入专辑作者"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">专辑描述</td>
+                <td><input type="text" name="salbum_describe" id="salbum_describe" class="form-control" placeholder="请输入专辑描述"/>
                 </td>
             </tr>
 

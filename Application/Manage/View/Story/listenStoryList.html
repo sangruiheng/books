@@ -16,12 +16,12 @@
 <!--alert弹窗end  -->
 <nav class="navbar navbar-default" role="navigation">
 	<div class="navbar-header">
-		<a class="navbar-brand" href="#">听----故事管理</a>
+		<a class="navbar-brand" href="#">专辑名称：<{$salbum.salbum_name}></a>
 	</div>
 	<div>
-		<button type="button" class="btn btn-danger navbar-btn listButton" onclick="deletelistenStory('listenstory')"><i class="fa fa-trash-o" aria-hidden="true"></i> 删除</button>
+		<button type="button" value="<{$salbum.id}>" class="btn btn-danger navbar-btn listButton" onclick="deletelistenStory(this,'listenstory')"><i class="fa fa-trash-o" aria-hidden="true"></i> 删除</button>
 		<button type="button" class="btn btn-info navbar-btn listButton" onclick="editData('addListenStory')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> 修改</button>
-		<button type="button" class="btn btn-success navbar-btn listButton" onclick="openAddData('addListenStory')"><i class="fa fa-plus" aria-hidden="true"></i> 新建</button>
+		<button type="button" value="<{$salbum.id}>" class="btn btn-success navbar-btn listButton" onclick="openAddListenStory(this,'addListenStory')"><i class="fa fa-plus" aria-hidden="true"></i> 新建</button>
 		<form class="navbar-form navbar-right listSearch" role="search" method="get" action="__ACTION__">
 
 			<div class="form-group">
@@ -39,7 +39,7 @@
 			<th>选择</th>
 			<th>编号</th>
 			<th>故事名称</th>
-			<th>所属分类</th>
+			<!--<th>所属分类</th>-->
 			<th>所属专辑</th>
 			<th>发布时间</th>
 		</tr>
@@ -50,7 +50,7 @@
 				<td><input type="checkbox" name="del_listID" id="del_listID" data-name="multi-select" value="<{$vo.id}>" /></td>
 				<td><{$vo.id}></td>
 				<td><{$vo.listen_story_name}></td>
-				<td><{$vo.sCategory.scategory_name}></td>
+				<!--<td><{$vo.sCategory.scategory_name}></td>-->
 				<td><{$vo.sAlbum.salbum_name}></td>
 				<td><{$vo.listen_story_time|date="Y-m-d H:i:s",###}></td>
 			</tr>
@@ -66,8 +66,23 @@
 </body>
 </html>
 <script>
+
+    function openAddListenStory(obj,src){
+        var salbum_id = $(obj).attr('value');
+        if (typeof(src) != "undefined") {
+            window.location.href = APP+'/'+CONTROLLER_NAME+'/'+src+'/salbum_id/'+salbum_id;
+        }else{
+            $.show({
+                title : '提示',
+                isConfirm: false,
+                content : '未检测到指定页面'
+            });
+        }
+    }
+
     //列表页面点击删除按钮
-    function deletelistenStory(table){
+    function deletelistenStory(obj, table){
+        var salbum_id = $(obj).attr('value');
         var delID = '';
         $("input[name=del_listID]:checked").each(function() {
             delID += $(this).val() + ",";
@@ -103,7 +118,7 @@
                 content : '确定要删除吗？',
                 callback : function(){
                     $.post(APP+'/Story/deletelistenStory',{delID : delID,table : table},function(){
-                        reload();
+                        window.location.href=APP+'/Story/listenStoryList?salbum_id='+salbum_id ;
                     });
                 }
             });
