@@ -9,12 +9,11 @@
 namespace Api\Controller;
 
 
-use Api\Exception\BannerException;
 use Api\Exception\BgmException;
 use Api\Exception\ScategoryException;
 use Api\Exception\SuccessException;
 use Api\Exception\TellingStoryException;
-use Api\Model\BannerModel;
+use Api\Model\BgmlikeModel;
 use Api\Model\BgmModel;
 use Api\Model\McategoryModel;
 use Api\Model\ScategoryModel;
@@ -26,7 +25,6 @@ use Api\Validate\LoadMore;
 use Api\Validate\SearchName;
 use Api\Validate\Sort;
 use Api\Validate\UserAlbum;
-use Think\Controller;
 
 class TellingstoryController extends CommonController
 {
@@ -101,6 +99,51 @@ class TellingstoryController extends CommonController
             'msg' => 'success',
             'data' => $loadBgm
         ]);
+    }
+
+
+    //收藏背景音乐
+    public function likeBgm()
+    {
+        (new IDMustBePostiveInt())->goCheck();
+        $user_id = Token::getCurrentUid();
+        $bgm_id = $_POST['id'];
+        $bgmlikeModel = new BgmlikeModel();
+        $bgmlikeModel->user_id = $user_id;
+        $bgmlikeModel->bgm_id = $bgm_id;
+        $bgmLike = $bgmlikeModel->add();
+        if (!$bgmLike) {
+            $this->ajaxReturn((new BgmException([
+                'code' => 40001,
+                'msg' => '收藏失败'
+            ]))->getException());
+        }
+        $this->ajaxReturn((new SuccessException([
+            'msg' => '收藏成功'
+        ]))->getException());
+    }
+
+
+    //取消收藏背景音乐
+    public function cancelLikeBgm()
+    {
+        (new IDMustBePostiveInt())->goCheck();
+        $user_id = Token::getCurrentUid();
+        $bgm_id = $_POST['id'];
+        $bgmlikeModel = new BgmlikeModel();
+        $map['user_id'] = $user_id;
+        $map['bgm_id'] = $bgm_id;
+        $bgmLike = $bgmlikeModel->where($map)->delete();
+        if (!$bgmLike) {
+            $this->ajaxReturn((new BgmException([
+                'code' => 40002,
+                'msg' => '取消收藏失败'
+            ]))->getException());
+        }
+        $this->ajaxReturn((new SuccessException([
+            'msg' => '取消收藏成功'
+        ]))->getException());
+
     }
 
 
@@ -220,8 +263,7 @@ class TellingstoryController extends CommonController
     public function saveDrafts()
     {
         //根据token来获取uid
-        $this->uid = Token::getCurrentUid();
-
+//        $this->uid = Token::getCurrentUid();
     }
 
     //获取新建专辑分类

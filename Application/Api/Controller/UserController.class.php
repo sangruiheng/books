@@ -9,7 +9,9 @@
 namespace Api\Controller;
 
 
+use Api\Exception\UserException;
 use Api\Model\UserModel;
+use Api\Service\Token;
 use Api\Service\UserToken;
 
 
@@ -44,7 +46,9 @@ class UserController extends CommonController
         ]);
     }
 
-    public function wxPhone(){
+    //获取用户手机号
+    public function wxPhone()
+    {
         $userModel = new UserModel();
         $encryptedData = $_POST['encryptedData'];
         $iv = $_POST['iv'];
@@ -55,6 +59,24 @@ class UserController extends CommonController
             'msg' => 'success',
             'data' => $wxPhone['phoneNumber']
         ]);
+    }
+
+    //个人中心
+    public function PersonalCenter()
+    {
+        $this->uid = Token::getCurrentUid();
+        $userModel = new UserModel();
+        $user = $userModel->field('nickName,avatarUrl,lastTime')->find($this->uid);
+        $user['lastTime'] = date('Y-m-d H:i:s',$user['lastTime']);
+        if (!$user) {
+            $this->ajaxReturn((new UserException())->getException());
+        }
+        $this->ajaxReturn([
+            'code' => 200,
+            'msg' => 'success',
+            'data' => $user
+        ]);
+
     }
 
 

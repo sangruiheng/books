@@ -145,6 +145,7 @@
     //上传音频
     function uploadStory() {
         $('input[type="file"]').on('change', function () {
+            $.showLoading('正在提交……');
             var formData = new FormData();
             formData.append('file', $('input[name="bgm_url_upload"]')[0].files[0]);
             $.ajax({
@@ -156,6 +157,8 @@
                 contentType: false,
                 success: function (res) {
                     if (res.code == 200) {
+                        $.closeLoading(function(){
+                        });
                         // alert(JSON.stringify(res));
                         var str = `
                                      <audio id="upload_bgm_url" src='/Uploads/Manage/${res.data.url}' controls="controls">

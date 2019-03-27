@@ -99,10 +99,10 @@ class UserToken extends Token
 
         $user = (new UserModel())->getByOpenID($wxResult['openID']);
 
-        if ($user) { //如果存在 更新用户 取出uid
-            $uid = $this->wxUpdateUser($wxResult, $user['id']);
-        } else { //不存在插入新用户
-            $uid = $this->wxAddUser($wxResult);
+        if ($user['addTime']) { //如果存在 更新用户 取出uid
+            $uid = $this->wxUpdateUser($wxResult, $user['id'],1);
+        } else { //不存在  插入新用户
+            $uid = $this->wxUpdateUser($wxResult, $user['id'],2);
         }
         //生成token  写入数据库
         $token = $this->saveToken($uid);
@@ -159,35 +159,20 @@ class UserToken extends Token
         return $key;
     }
 
-
-    //不存在添加一条用户  微信
-    private function wxAddUser($wxResult)
-    {
-        $User = M('user');
-        $data['openid'] = $wxResult['openID'];
-        $data['nickName'] = $wxResult['nickName'];
-        $data['avatarUrl'] = $wxResult['avatarUrl'];
-        $data['city'] = $wxResult['city'];
-        $data['province'] = $wxResult['province'];
-        $data['country'] = $wxResult['country'];
-        $data['gender'] = $wxResult['gender'];
-        $data['addTime'] = time();
-        $uid = $User->add($data);
-        return $uid;
-    }
-
-
     //更新用户  微信
-    private function wxUpdateUser($wxResult, $uid)
+    private function wxUpdateUser($wxResult, $uid, $type)
     {
         $User = M('user');
         $data['openid'] = $wxResult['openID'];
-        $data['nickName'] = $wxResult['nickName'];
+        $data['nickName'] = encodeNickName($wxResult['nickName']);
         $data['avatarUrl'] = $wxResult['avatarUrl'];
         $data['city'] = $wxResult['city'];
         $data['province'] = $wxResult['province'];
         $data['country'] = $wxResult['country'];
         $data['gender'] = $wxResult['gender'];
+        if($type == 2){
+            $data['addTime'] = time();
+        }
         $data['lastTime'] = time();
         $map['id'] = $uid;
         $User->where($map)->save($data);

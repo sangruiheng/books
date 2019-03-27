@@ -2,7 +2,9 @@
 
 namespace Api\Controller;
 
+use Api\Model\UserformidModel;
 use Api\Model\UserModel;
+use Api\Service\Token;
 use Think\Controller;
 
 Vendor('PHPMailer.src.PHPMailer');
@@ -28,10 +30,6 @@ class CommonController extends Controller
         return $text;
     }
 
-    //统一返回res
-//	public function return_ajax($code=400;$msg='',$data=''){
-//		$this->ajaxReturn(array('code'=>$code,'msg'=>$msg,'data'=>$data));
-//	}
 
     public function return_ajax($code = 400, $msg = '', $data = array())
     {
@@ -65,6 +63,10 @@ class CommonController extends Controller
         fclose($myfile);
 
     }
+
+
+
+
 
 
 

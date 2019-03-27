@@ -108,6 +108,8 @@ class StoryController extends CommonController
     }
 
 
+
+
     //切换时获取分类专辑
     public function getSalbum()
     {

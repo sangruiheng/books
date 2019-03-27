@@ -14,12 +14,10 @@ class UserController extends CommonController {
         if(empty($p)){
             $p = 1;
         }
+        $map['addTime'] = array('neq' ,'');
         $user = D('user')->where($map)->order('id desc')->page($p.',10')->select();
         foreach ($user as &$value){
             $value['nickName'] = urldecode($value['nickName']);
-            if(!$value['openid']){
-                $value['avatarUrl'] ='http://admin.yjsina.com/'.$value['avatarUrl'];
-            }
         }
 //        print_r($user);
         $count = D('user')->where($map)->count();

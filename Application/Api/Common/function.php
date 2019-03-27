@@ -24,6 +24,17 @@ function http_curl($url, $type = 'get', $res = 'json', $arr = '')
 }
 
 
+//转码
+function encodeNickName($nickName){
+    return urlencode($nickName);
+}
+
+//解码
+function decodeNickName($nickName){
+    return urldecode($nickName);
+}
+
+
 
 function curl_get($url, &$httpCode = 0)
 {
