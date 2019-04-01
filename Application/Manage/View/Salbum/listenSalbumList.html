@@ -46,6 +46,7 @@
 			<th>是否收费</th>
 			<th>添加时间</th>
 			<th>专辑头图</th>
+			<th>是否完结</th>
 			<th>操作</th>
 		</tr>
 		</thead>
@@ -63,6 +64,7 @@
 				<td>
 					<img  src="/Uploads/Manage/<?php echo $vo['salbum_headimg']?>" width="100" height="100" class="newsimgs" alt="图片未找到" style="padding: 5px">
 				</td>
+				<td class="status "><{:statusInfo('salbum',$vo['id'],$vo['status'],'未完结','已完结')}></td>
 				<td>
 					<a class="btn btn-success navbar-btn" href="__APP__/Story/listenStoryList?scategory_id=<{$vo.sCategory.id}>&salbum_id=<{$vo.id}>" > 故事管理</a>
 				</td>

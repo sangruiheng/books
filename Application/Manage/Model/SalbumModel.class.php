@@ -11,6 +11,8 @@ class SalbumModel extends RelationModel{
         ),
 	);
     protected $_validate = array(
+        array('is_age','require','适合性别不能为空'),
+        array('is_sex','require','年龄段不能为空'),
         array('salbum_title','require','专辑名称不能为空'),
         array('scategory_id','require','分类不能为空'),
         array('salbum_describe','require','专题描述不能为空'),

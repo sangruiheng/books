@@ -44,7 +44,7 @@ class SalbumController extends CommonController
     {
         (new Sort())->goCheck();
         $salbumModel = new SalbumModel();
-        $order_type = $_POST['order_type'] == 1 ? 'desc':'asc' ;
+        $order_type = $_POST['order_type'] == 1 ? 'desc' : 'asc';
         $map['salbum_type'] = C('Story.ListenStory');
         $salbum = $salbumModel->field('scategory_id,salbum_addtime', true)->where($map)->order("id $order_type")->select();
         foreach ($salbum as &$val) {
@@ -63,16 +63,18 @@ class SalbumController extends CommonController
 
 
     //专辑根据播放量排序(听)
-    public function listenPlayVolumeSort(){
+    public function listenPlayVolumeSort()
+    {
 
     }
 
 
     //专辑根据最新排序(听)
-    public function listenNewestSort(){
+    public function listenNewestSort()
+    {
         (new Sort())->goCheck();
         $salbumModel = new SalbumModel();
-        $order_type = $_POST['order_type'] == 1 ? 'desc':'asc' ;
+        $order_type = $_POST['order_type'] == 1 ? 'desc' : 'asc';
         $map['salbum_type'] = C('Story.ListenStory');
         $salbum = $salbumModel->where($map)->order("salbum_addtime $order_type")->select();
         foreach ($salbum as &$val) {
@@ -91,7 +93,8 @@ class SalbumController extends CommonController
 
 
     //专辑根据时长排序(听)
-    public function listenDurationSort(){
+    public function listenDurationSort()
+    {
         (new Sort())->goCheck();
         $salbumModel = new SalbumModel();
         $map['salbum_type'] = C('Story.ListenStory');
@@ -101,7 +104,7 @@ class SalbumController extends CommonController
         foreach ($newSalbum as $key => $value) {
             $score[$key] = $value['storyDuration'];
         }
-        $_POST['order_type'] == 1 ? array_multisort($score, SORT_DESC, $newSalbum):array_multisort($score, SORT_ASC, $newSalbum) ;
+        $_POST['order_type'] == 1 ? array_multisort($score, SORT_DESC, $newSalbum) : array_multisort($score, SORT_ASC, $newSalbum);
         $this->ajaxReturn([
             'code' => 200,
             'msg' => 'success',
@@ -110,6 +113,47 @@ class SalbumController extends CommonController
 
     }
 
+
+    //免费榜(听)
+    public function salbumFreeList()
+    {
+        $salbumModel = new SalbumModel();
+        $map['is_charge'] = C('Story.Free');
+        $salbum = $salbumModel->where($map)->order('id desc')->select();
+        foreach ($salbum as &$val) {
+            $val['salbum_headimg'] = C('Story.img_prefix') . $val['salbum_headimg'];
+        }
+        if(!$salbum){
+            $this->ajaxReturn((new SalbumException())->getException());
+        }
+        $this->ajaxReturn([
+            'code' => 200,
+            'msg' => 'success',
+            'data' => $salbum
+        ]);
+
+    }
+
+
+    //收费榜(听)
+    public function salbumChargeList()
+    {
+        $salbumModel = new SalbumModel();
+        $map['is_charge'] = C('Story.Charge');
+        $salbum = $salbumModel->where($map)->order('id desc')->select();
+        foreach ($salbum as &$val) {
+            $val['salbum_headimg'] = C('Story.img_prefix') . $val['salbum_headimg'];
+        }
+        if(!$salbum){
+            $this->ajaxReturn((new SalbumException())->getException());
+        }
+        $this->ajaxReturn([
+            'code' => 200,
+            'msg' => 'success',
+            'data' => $salbum
+        ]);
+
+    }
 
 
 }
