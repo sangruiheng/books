@@ -33,7 +33,7 @@ class LoginController extends Controller {
 		if(empty($isCode))$this->ajaxReturn(array('code'=>400,'msg'=>'验证码不正确'));
 		$map['username'] = array('eq',$userName);
 		$map['password'] = array('eq',md5($passWord));
-		$info = M('adminuser')->where($map)->field('id,groupID')->find();
+		$info = M('adminuser')->where($map)->field('id,groupID,username')->find();
 		if(empty($info))$this->ajaxReturn(array('code'=>400,'msg'=>'用户名或密码不正确','data'=>$info));
 		$data['id'] = $info['id'];
 		$data['nextLoginIp'] = get_client_ip();
@@ -44,6 +44,7 @@ class LoginController extends Controller {
 		if($rs){
 			session('crm_uid',$info['id']);
 			session('crm_groupID',$info['groupID']);
+			session('reName',$info['username']);
 			$this->ajaxReturn(array('code'=>200,'msg'=>'登录成功','data'=>__APP__.'/Index/index'));
 		}else{
 			$this->ajaxReturn(array('code'=>400,'msg'=>'登录失败请联系管理员'));

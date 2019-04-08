@@ -3,7 +3,8 @@ return array(
     'URL_ROUTER_ON' => true, //开启路由
     'URL_PATHINFO_DEPR' => '/', //PATHINFO URL分割符
     'URL_ROUTE_RULES' => array( //定义路由规则
-        'api/getBanner' => array('Api/Banner/getBanner', array('method' => 'get')),     //获取banner
+        'api/getListenBanner' => array('Api/Banner/getListenBanner', array('method' => 'get')),     //获取听故事banner
+        'api/getTellingBanner' => array('Api/Banner/getTellingBanner', array('method' => 'get')),     //获取讲故事banner
 
 
         'api/Scategory/getListenScategory' => array('Api/Scategory/getListenScategory', array('method' => 'get')),     //获取听故事分类
@@ -39,13 +40,18 @@ return array(
 
         'api/Listenstory/getSearchListenStory' => array('Api/Listenstory/getSearchListenStory', array('method' => 'post')),         //搜素专辑名(听)
         'api/Listenstory/getListenStoryCharge' => array('Api/Listenstory/getListenStoryCharge', array('method' => 'get')),         //获取听故事收费榜
-        'api/Listenstory/getPageSearch' => array('Api/Listenstory/getPageSearch', array('method' => 'get')),         //首页筛选
+        'api/Listenstory/getShowPageSearch' => array('Api/Listenstory/getShowPageSearch', array('method' => 'get')),         //首页显示筛选
+        'api/Listenstory/getPageSearch' => array('Api/Listenstory/getPageSearch', array('method' => 'post')),         //首页筛选
 
 
         'api/User/getOpenID' => array('Api/User/getOpenID', array('method' => 'post')),         //获取openID
         'api/User/wxLogin' => array('Api/User/wxLogin', array('method' => 'post')),         //用户登陆 返回Token
         'api/User/wxPhone' => array('Api/User/wxPhone', array('method' => 'post')),         //获取用户手机号
         'api/User/PersonalCenter' => array('Api/User/PersonalCenter', array('method' => 'post')),         //个人中心
+        'api/User/likeUserAlbum' => array('Api/User/likeUserAlbum', array('method' => 'post')),         //用户专辑(收藏取消收藏)
+        'api/User/getUserHomeAlbum' => array('Api/User/getUserHomeAlbum', array('method' => 'post')),         //获取用户专辑主页
+        'api/User/UserAlbum' => array('Api/User/UserAlbum', array('method' => 'post')),         //获取用户专辑列表
+
 
         'api/collectFormID' => array('Api/Index/collectFormID', array('method' => 'post')),         //收集formID
         'api/checkSignature' => array('Api/Index/checkSignature', array('method' => 'post')),         //发送模板消息

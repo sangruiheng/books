@@ -27,6 +27,9 @@ class ScategoryController extends CommonController
         $scategoryModel = new ScategoryModel();
         $map['scategory_type'] = C('Story.ListenStory');
         $scategory = $scategoryModel->field('scategory_type', true)->where($map)->select();
+        foreach ($scategory as &$value) {
+            $value['scategory_headimg'] = C('Story.img_prefix') . $value['scategory_headimg'];
+        }
         if (!$scategory) {
             $this->ajaxReturn((new ScategoryException())->getException());
         }
@@ -43,6 +46,9 @@ class ScategoryController extends CommonController
         $scategoryModel = new ScategoryModel();
         $map['scategory_type'] = C('Story.TellingStory');
         $scategory = $scategoryModel->field('scategory_type', true)->where($map)->select();
+        foreach ($scategory as &$value) {
+            $value['scategory_headimg'] = C('Story.img_prefix') . $value['scategory_headimg'];
+        }
         if (!$scategory) {
             $this->ajaxReturn((new ScategoryException())->getException());
         }

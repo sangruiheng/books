@@ -14,6 +14,7 @@ use Api\Exception\SalbumException;
 use Api\Exception\ScategoryException;
 use Api\Model\BannerModel;
 use Api\Model\SalbumModel;
+use Api\Validate\PageSearch;
 use Api\Validate\SearchName;
 use Manage\Model\ScategoryModel;
 use Think\Controller;
@@ -45,18 +46,33 @@ class ListenstoryController extends CommonController
 
 
     //首页筛选
-    public function getPageSearch()
+    public function getShowPageSearch()
     {
         $scategoryModel = new ScategoryModel();
         $search = array(
             'salbum_age' => array(
-                '0-3岁',
-                '6岁+',
-                '10岁+'
+                array(
+                    'is_age' => 0,
+                    'name' => '0-3岁'
+                ),
+                array(
+                    'is_age' => 1,
+                    'name' => '6岁+'
+                ),
+                array(
+                    'is_age' => 2,
+                    'name' => '10岁+'
+                )
             ),
             'salbum_sex' => array(
-                '男生',
-                '女生'
+              array(
+                  'is_sex' => 0,
+                  'name' => '男生'
+              ),
+                array(
+                    'is_sex' => 1,
+                    'name' => '女生'
+                )
             ),
             'salbum_category' => array()
         );
@@ -78,6 +94,36 @@ class ListenstoryController extends CommonController
             'code' => 200,
             'msg' => 'success',
             'data' => $search
+        ]);
+
+    }
+
+
+    //筛选搜索
+    public function getPageSearch(){
+        $is_age = $_POST['is_age'];
+        $is_sex = $_POST['is_sex'];
+        $scategory_id = $_POST['scategory_id'];
+        (new PageSearch())->goCheck();
+        $salbumModel = new SalbumModel();
+        $map['is_age'] = $is_age;
+        $map['is_sex'] = $is_sex;
+        $map['scategory_id'] = $scategory_id;
+        $salbum = $salbumModel->where($map)->select();
+        foreach ($salbum as &$value) {
+            $value['salbum_headimg'] = C('Story.img_prefix') . $value['salbum_headimg'];
+            $value['storySum'] = $salbumModel::getStorySum($value['id']);
+        }
+        if (!$salbum) {
+            $this->ajaxReturn((new ScategoryException([
+                'code' => 50001,
+                'msg' => '暂无筛选'
+            ]))->getException());
+        }
+        $this->ajaxReturn([
+            'code' => 200,
+            'msg' => 'success',
+            'data' => $salbum
         ]);
 
 

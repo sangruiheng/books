@@ -42,12 +42,13 @@ class SalbumModel extends RelationModel
 
 
     //统计专辑下面故事的总时长
-    public static function getStoryDuration($salbum){
-        foreach($salbum as &$value){
-            if(!$value['Listenstory']){
+    public static function getStoryDuration($salbum)
+    {
+        foreach ($salbum as &$value) {
+            if (!$value['Listenstory']) {
                 $value['storyDuration'] = 0;
-            }else{
-                foreach($value['Listenstory'] as &$item){
+            } else {
+                foreach ($value['Listenstory'] as &$item) {
                     $value['storyDuration'] += intval($item['listen_story_music_time']);
                 }
             }
@@ -55,6 +56,7 @@ class SalbumModel extends RelationModel
         }
         return $salbum;
     }
+
 
 
 }

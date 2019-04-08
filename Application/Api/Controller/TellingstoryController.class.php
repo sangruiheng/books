@@ -40,14 +40,14 @@ class TellingstoryController extends CommonController
         $user_id = Token::getCurrentUid();
         $bgm = $mcategoryModel->relation(array('bgm'))->select();
         $where['user_id'] = $user_id;
-        $likeBgm = $bgmlikeModel->where($where)->getField('bgm_id',true);
+        $likeBgm = $bgmlikeModel->where($where)->getField('bgm_id', true);
         foreach ($bgm as &$value) {
             foreach ($value['bgm'] as &$item) {
                 if ($item['bgm_url']) {
                     $item['bgm_url'] = C('Story.img_prefix') . $item['bgm_url'];
                 }
                 //是否收藏
-                in_array($item['id'],$likeBgm) ? $item['is_like'] = 1: $item['is_like'] = 0;
+                in_array($item['id'], $likeBgm) ? $item['is_like'] = 1 : $item['is_like'] = 0;
             }
         }
         if (!$bgm) {
@@ -69,19 +69,18 @@ class TellingstoryController extends CommonController
         $bgmlikeModel = new BgmlikeModel();
         $mcategoryModel = new McategoryModel();
         $mcategory = $mcategoryModel->select();
-//        $user_id = 260;
         $user_id = Token::getCurrentUid();
         $where['user_id'] = $user_id;
-        $likeBgm = $bgmlikeModel->where($where)->getField('bgm_id',true);
+        $likeBgm = $bgmlikeModel->where($where)->getField('bgm_id', true);
         $bgm_title = $_POST['title'];
         $data['bgm_title'] = array('like', "%$bgm_title%");
         $bgm = $bgmModel->where($data)->select();
-        foreach ($mcategory as &$value){
-            foreach ($bgm as &$val){
-                if($value['id'] == $val['mcategory_id']){
+        foreach ($mcategory as &$value) {
+            foreach ($bgm as &$val) {
+                if ($value['id'] == $val['mcategory_id']) {
                     $val['bgm_url'] = C('Story.img_prefix') . $val['bgm_url'];
                     //是否收藏
-                    in_array($val['id'],$likeBgm) ? $val['is_like'] = 1: $val['is_like'] = 0;
+                    in_array($val['id'], $likeBgm) ? $val['is_like'] = 1 : $val['is_like'] = 0;
                     $value['bgm'][] = $val;
 
                 }
@@ -103,7 +102,7 @@ class TellingstoryController extends CommonController
     {
         //分类id  页数id  是否搜索
         (new LoadMore())->goCheck();
-        if($_POST['title']){
+        if ($_POST['title']) {
             $bgm_title = $_POST['title'];
             $map['bgm_title'] = array('like', "%$bgm_title%");
         }
@@ -113,7 +112,7 @@ class TellingstoryController extends CommonController
         $bgmlikeModel = new BgmlikeModel();
         $user_id = Token::getCurrentUid();
         $where['user_id'] = $user_id;
-        $likeBgm = $bgmlikeModel->where($where)->getField('bgm_id',true);
+        $likeBgm = $bgmlikeModel->where($where)->getField('bgm_id', true);
 
         $bgmModel = new BgmModel();
         $statr_page = ($page_id - 1) * 2;
@@ -125,7 +124,7 @@ class TellingstoryController extends CommonController
                 $value['bgm_url'] = C('Story.img_prefix') . $value['bgm_url'];
             }
             //是否收藏
-            in_array($value['id'],$likeBgm) ? $value['is_like'] = 1: $value['is_like'] = 0;
+            in_array($value['id'], $likeBgm) ? $value['is_like'] = 1 : $value['is_like'] = 0;
         }
         if (!$loadBgm) {
             $this->ajaxReturn((new BgmException())->getException());
@@ -296,12 +295,13 @@ class TellingstoryController extends CommonController
     }
 
     //上传作品--选择专辑
-    public function getUserAlbum(){
+    public function getUserAlbum()
+    {
         $user_id = Token::getCurrentUid();
         $useralbumModel = new UseralbumModel();
         $where['user_id'] = $user_id;
         $userAlbum = $useralbumModel->where($where)->select();
-        if(!$userAlbum){
+        if (!$userAlbum) {
             $this->ajaxReturn((new SalbumException())->getException());
         }
         $this->ajaxReturn([
@@ -317,8 +317,7 @@ class TellingstoryController extends CommonController
     public function saveDrafts()
     {
 
-        $user_id = 260;
-//        $user_id = Token::getCurrentUid();
+        $user_id = Token::getCurrentUid();
         (new UserStory())->goCheck();
         $userstoryModel = new UserstoryModel();
         $user_story = $_POST['user_story'];
@@ -330,9 +329,35 @@ class TellingstoryController extends CommonController
         $userstoryModel->bgm_id = $bgm_id;
         $userstoryModel->story_type = C('Story.DraftsStory');
         $userStory = $userstoryModel->add();
-        if(!$userStory){
+        if (!$userStory) {
             $this->ajaxReturn((new TellingStoryException([
-                'code'=> 60002,
+                'code' => 60002,
+                'msg' => '加入草稿箱失败'
+            ]))->getException());
+        }
+        $this->ajaxReturn((new SuccessException([
+            'msg' => '加入草稿箱成功'
+        ]))->getException());
+    }
+
+
+    public function saveStory()
+    {
+        $user_id = Token::getCurrentUid();
+        (new UserStory())->goCheck();
+        $userstoryModel = new UserstoryModel();
+        $user_story = $_POST['user_story'];
+        $telling_story_id = $_POST['telling_story_id'];
+        $bgm_id = $_POST['bgm_id'];
+        $userstoryModel->user_id = $user_id;
+        $userstoryModel->user_story = $user_story;
+        $userstoryModel->telling_story_id = $telling_story_id;
+        $userstoryModel->bgm_id = $bgm_id;
+        $userstoryModel->story_type = C('Story.DraftsStory');
+        $userStory = $userstoryModel->add();
+        if (!$userStory) {
+            $this->ajaxReturn((new TellingStoryException([
+                'code' => 60002,
                 'msg' => '加入草稿箱失败'
             ]))->getException());
         }
@@ -359,20 +384,22 @@ class TellingstoryController extends CommonController
     }
 
 
-    //新建用户专辑
+    //用户新建专辑
     public function createUserAlbum()
     {
         $uid = Token::getCurrentUid();
         (new UserAlbum())->goCheck();
-        $user_album_title = $_POST['user_album_title'];
-        $user_album_authority = $_POST['user_album_authority'];
-        $scategory_id = $_POST['scategory_id'];
         $useralbumModel = new UseralbumModel();
-        $useralbumModel->user_id = $uid;
-        $useralbumModel->user_album_title = $user_album_title;
-        $useralbumModel->user_album_authority = $user_album_authority;
-        $useralbumModel->scategory_id = $scategory_id;
-        $userAlbum = $useralbumModel->add();
+
+        //上传专辑头像
+        $useralbum_id = $useralbumModel->UploadUserAlbumImg();
+
+        //上传用户标签
+        $useralbumModel->UploadUserTags($_POST['arrayStoryLabel'], $useralbum_id);
+
+        //上传用户专辑其他信息
+        $userAlbum = $useralbumModel->UploadUserAlbumOther($uid, $_POST['user_album_title'], $_POST['user_album_authority'], $_POST['user_album_describe'], $_POST['scategory_id'], $useralbum_id);
+
         if (!$userAlbum) {
             $this->ajaxReturn((new TellingStoryException([
                 'code' => 60001,

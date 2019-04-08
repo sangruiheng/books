@@ -11,21 +11,20 @@
 <!--header begin-->
 <div class="com-headerBox">
     <div class="com-headerTop com-bg">
-        <div class="com-logo"><{:C('PROJECT_TITLE.LOGIN_TITLE')}>·管理系统</div>
+        <div class="com-logo"><{:C('PROJECT_TITLE.LOGIN_TITLE')}> | 后台管理系统</div>
         <div class="com-htRight">
-
-
+            <div class="com-userHea" style="background:url(/Public/Manage/images/default_headImg.png) center no-repeat;background-size: cover;"></div>
+            <div class="com-userName"><{$Think.session.reName}></div>
             <ul class="com-heaMenu">
-                <li><a href="__APP__/Index/index" ><i class="fa fa-home"></i> 首页</a></li>
-                <li><a class="toUnreadMessage" href="javascript:void(0);"><i class="fa fa-commenting-o"></i>未读订单<span class="badge"></span></a></li>
-                <!--<button class="btn btn-primary" type="button">-->
-                <!--Messages <span class="badge">4</span>-->
-                <!--</button>-->
-                <li><a href="http://www.icpnt.com/" target="view_window"><i class="fa fa-question-circle"></i> 帮助</a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-home"></i> 首页</a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-flag"></i> 皮肤</a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-cog"></i> 设置</a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-question-circle"></i> 帮助</a></li>
                 <li><a class="topLogOut" href="javascript:void(0)"><i class="fa fa-power-off"></i> 退出</a></li>
             </ul>
         </div>
     </div>
+
     <div class="com-hederMenu">
         <div class="com-hideIcon" title="展开左侧菜单" data-state="hide"><i class="fa fa-bars"></i></div>
         <ul class="com-hmUl">
@@ -35,6 +34,10 @@
         </ul>
     </div>
 </div>
+
+
+
+
 <!--header end-->
 
 
@@ -55,20 +58,3 @@
 <!--right end-->
 </body>
 </html>
-<!--<script>-->
-    <!--$('.toUnreadMessage').click(function(){-->
-        <!--var maxorderID = $(this).attr('maxorder-id');-->
-        <!--var src = '/Order/orderList';-->
-        <!--var iframeSrc = $('#icpnt_iframe').attr('src',src);-->
-        <!--window.right.location = APP+src;-->
-    <!--});-->
-
-    <!--setInterval(function(){-->
-        <!--$.post(APP+'/Index/unreadOrderMessage','',function(res){-->
-            <!--if(res.code == 200){-->
-                <!--$('.badge').html(res.order_count);-->
-            <!--}-->
-            <!--// console.log(res);-->
-        <!--});-->
-    <!--},1000);-->
-<!--</script>-->

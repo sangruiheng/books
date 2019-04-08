@@ -7,6 +7,7 @@ class ScategoryModel extends RelationModel{
 	);
     protected $_validate = array(
         array('scategory_name','require','故事分类名称不能为空'),
+        array('scategory_headimg','require','分类头图不能为空'),
         array('scategory_type','require','类型不能为空'),
     );
 

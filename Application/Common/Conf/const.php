@@ -29,9 +29,8 @@ return array(
         //草稿箱故事
         'DraftsStory' => 1,
 
-
         //图片路径
-        "img_prefix" => "http://www.books111.com/Uploads/Manage/",
+        "img_prefix" => "http://192.168.0.198/Uploads/Manage/",
     ),
 
     'WX' => array(

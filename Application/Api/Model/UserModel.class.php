@@ -105,4 +105,18 @@ class UserModel extends RelationModel
 
     }
 
+
+    //判断当前用户是否收藏该专辑
+    public function is_UserLike($uid, $user_album_id)
+    {
+        $useralbumlikeModel = new UseralbumlikeModel();
+        $map['user_id'] = $uid;
+        $map['user_album_id'] = $user_album_id;
+        $userAlbumLike = $useralbumlikeModel->where($map)->find();
+        if(!$userAlbumLike){
+            return false;
+        }
+        return true;
+    }
+
 }

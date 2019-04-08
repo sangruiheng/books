@@ -67,10 +67,9 @@ class ScategoryController extends CommonController
     }
 
 
-    //删除
-    public function deletelistenScategory()
+    //删除分类
+    public function deleteScategory()
     {
-        $salbumModel = new SalbumModel();
         $scategoryModel = new ScategoryModel();
         $ids = $_POST['delID'];
         if (strlen($ids) > 0) {
@@ -78,19 +77,12 @@ class ScategoryController extends CommonController
         }
         $map['id'] = array('in', $ids);
         $scategory = $scategoryModel->where($map)->select();
-        $scategory_ids = array();
-        foreach ($scategory as $value) {
-            array_push($scategory_ids, $value['id']);
-        }
-        $where['scategory_id'] = array('in', $scategory_ids);
-        $salbum = $salbumModel->where($where)->select();
-        foreach ($salbum as $value) {   //删除专辑图片
-            $file = ('Uploads/Manage/' . $value["salbum_headimg"]);
+        foreach ($scategory as $value) {   //删除专辑图片
+            $file = ('Uploads/Manage/' . $value["scategory_headimg"]);
             if (file_exists($file)) {
                 @unlink($file);
             }
         }
-        $salbumModel->where($where)->delete();  //删除专辑
         $scategoryModel->delete($ids);      //删除分类
     }
 
